@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Crystal Collector Game</title>
 </head>
 <body>
+        <div class="container">
+                <div class= "jumbotron p-2">
+                    <div class= "row">
+                        <div class= "col-6 col-md-4">
+                                <img src="./assets/images/main_crystal.jpg" class=" rounded-lg mr-3" alt="...">
+                        </div>
+                        <div class="col-12 col-md-8 ">
+                            <h1 class ="font-weight-bold">Crystal Collector</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                        <div class="card-header">
+                          Instructions
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">You will be given a random number at the start of the game.
+                                <br><br>
+                                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+                                <br><br>
+                                You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+                                <br><br>
+                                The value of each crystal is hidden from you until you click on it.
+                                <br><br>
+                                Each time when the game starts, the game will change the values of each crystal.
+                                <br><br>
+                            </p>
+                        </div>
+                 </div>
+                 <br><br>
+
+                 <div class="row ">
+                        <div class="col-6 col-md-4"><div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Target</div>
+                                <div class="card-body">
+                                  <span id= "target"></span>
+                                </div>
+                              </div></div>
+                        <div class="col-6 col-md-4"><div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header userTotal">Score</div>
+                                <div class="card-body">
+                                  <span id= "score"></span>
+                                </div>
+                              </div></div>
+                        <div class="col-6 col-md-4"><div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Wins/Losses</div>
+                                <div class="card-body">
+                                  <p class="card-text">Wins: <span id= "Wins"></span>
+                                      <br>
+                                    Losses: <span id= "Losses"></span></p>
+                                </div>
+                              </div></div>
+                              
+                      </div>
+
+
+
+                      <div class="jumbotron">
+                          <div class="row">
+                              <div class="col-6 col-md-3">
+                                  <img src="./assets/images/blue_crystal.jpg" class=" crystal blue rounded-lg mr-3" alt="blue">
+                                </div>
+
+                                <div class="col-6 col-md-3">
+                                        <img src="./assets/images/red_crystal.jpg" class=" crystal red rounded-lg mr-3" alt="red">
+                                      </div>
+                                     
+                                      <div class="col-6 col-md-3">
+                                            <img src="./assets/images/purple_crystal.jpg" class=" crystal  purple rounded-lg mr-3" alt="purple">
+                                          </div>
+
+                                          <div class="col-6 col-md-3">
+                                                <img src="./assets/images/green_crystal.jpg" class=" crystal green rounded-lg mr-3" alt="green">
+                                              </div>
+
+                            </div>
+                        </div>
+
+
+                    
+
+
+
+
+                
+                
+                <!-- <div class="panel panel-default" id= "panelStyle">
+                    <div class= "panel-body">
+                        <img src="images/image1.png" class=JewelStyle id="one">
+                        <img src="images/image2.png" class=JewelStyle id="two">
+                        <img src="images/image3.png" class=JewelStyle id= "three">
+                        <img src="images/image4.png" class=JewelStyle id= "four">
+                    </div>
+                </div>
+                <div class="panel panel-default" id= "panelStyle">
+                    <div class= "panel-body">
+                        <h4 id = "firstbox">Number to match: <span id= "number"></span></h4>
+                        <h4 id = "secondbox">Your number: <span id="Combined"></span></h4>
+                    </div>
+                </div>
+                <div class="panel panel-default" id= "panelStyle">
+                    <div class= "panel-body">
+                        <h4>
+                        Wins: <span id= "numberWins"></span>
+                        <br>
+                        Losses: <span id= "numberLosses"></span>
+                        </h4>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+    <!-- <div class = "container-fluid">
+        <div class = "row">
+                <div class="media">
+                        <img src="./assets/images/main_crystal.jpg" class=" rounded-lg mr-3" alt="...">
+                        <div class="media-body">
+                         <span class= "align-middle mt-50"> <h1>Collect The Crystals</h1></span>
+                        </div>
+                      </div>
+        </div>
+    </div> -->
     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="./assets/javascript/games.js"></script>
 </body>
 </html>
