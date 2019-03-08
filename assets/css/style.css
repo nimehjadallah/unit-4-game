@@ -9,6 +9,10 @@ h1{
     justify-content: flex-end;
 }
 
+.header_img{
+    display: inline-block;
+}
+
 @media screen and (max-width: 768px) {
     h1{
         margin-left: 80px;
@@ -26,4 +30,19 @@ h1{
     .header_img{
         
     } 
+}
+
+@media screen and (max-width:460 px){
+    h1{
+        font-size: 30px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .header_img{
+        width: 100px;
+        
+    }
+
+
 }
