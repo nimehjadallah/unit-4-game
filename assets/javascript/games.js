@@ -1,9 +1,5 @@
 $(document).ready(function() {
     var target="";
-    var redValue="";
-    var blueValue="";
-    var purpleValue="";
-    var greenValue="";
     var redBtn;
     var blueBtn;
     var purpleBtn;
@@ -14,15 +10,15 @@ $(document).ready(function() {
     
     function initialize() {
         target=Math.floor(Math.random()*101)+19;
-        // reset counter
+        
         score=0;
         var crystal=[$(".red"), $(".blue"), $(".purple"), $(".green")];
         var button=[redBtn, blueBtn, purpleBtn, greenBtn];
-        // to assign value to each crystal
+        
         for (var i=0; i<crystal.length; i++) {
             button[i]=crystal[i].attr("data-crystalValue", Math.floor(Math.random()*12)+2);
         };
-        // to print out target number and score on screen
+        
         $("#target").html(target);
         $("#wins").html(wins);
         $("#losses").html(loss);
@@ -30,7 +26,7 @@ $(document).ready(function() {
     }
     initialize();
     
-    // console.log(redValue +"<br>"+blueValue+"<br>"+purpleValue+"<br>"+greenValue);
+  
     
     $(".crystal").on("click", function(){
         score += parseInt($(this).attr("data-crystalValue"));
