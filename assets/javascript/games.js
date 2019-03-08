@@ -18,7 +18,6 @@ $(document).ready(function() {
         for (var i=0; i<crystal.length; i++) {
             button[i]=crystal[i].attr("data-crystalValue", Math.floor(Math.random()*12)+2);
         };
-        
         $("#target").html(target);
         $("#wins").html(wins);
         $("#losses").html(loss);
@@ -26,7 +25,6 @@ $(document).ready(function() {
     }
     initialize();
     
-  
     
     $(".crystal").on("click", function(){
         score += parseInt($(this).attr("data-crystalValue"));
